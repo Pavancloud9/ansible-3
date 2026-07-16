@@ -4,7 +4,7 @@
   vars:
     MY_NUMBER: 20
   tasks:
-  - name: print if given number is greater than 10
+  - name: print if given number is greater than 100
     ansible.builtin.debug:
       msg: "Given number {{ MY_NUMBER }} is greater than 100"
     when: MY_NUMBER > 100
