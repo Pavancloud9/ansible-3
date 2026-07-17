@@ -19,3 +19,11 @@
         duration: 120hrs
     ansible.builtin.debug:
       msg: "course details {{ COURSE | dict2items }}"
+    
+  - name: check ip address is valid or not
+    vars:
+      IP: 286.245.265.241
+    tasks:
+    - name: print the ip
+      ansible.builtin.debug:
+        msg: "ip is {{ IP | ansible.utils.ipaddr }}"
